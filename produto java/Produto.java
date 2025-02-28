@@ -3,6 +3,7 @@ public class Produto{
     String nome;
     String descricao;
     int quantidade;
+    
     public Produto(double preco, String nome, String descricao, int quantidade){
         this.preco = preco;
         this.nome = nome;

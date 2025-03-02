@@ -11,14 +11,14 @@ public class Main{
 		double preco = scanner.nextDouble();
 		System.out.println("Digite a quantidade do produto: ");
 		int quantidade = scanner.nextInt();
-		scanner.close();
-
 		Produto produto = new Produto(preco, nome, descricao, quantidade);
+		
 		System.out.println("Produto cadastrado com sucesso!");
-		System.out.println("Nome: " + produto.nome);
-		System.out.println("Descrição: " + produto.descricao);
-		System.out.println("Preço: " + produto.preco);
-		System.out.println("Quantidade: " + produto.quantidade);
+		System.out.println("Nome: " + produto.getNome());
+		System.out.println("Descrição: " + produto.getDescricao());
+		System.out.println("Preço: " + produto.getPreco());
+		System.out.println("Quantidade: " + produto.getQuantidade());
+
 		
 	}
 }
